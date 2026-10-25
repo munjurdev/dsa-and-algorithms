@@ -1,0 +1,7 @@
+# Core DSA practice requires no third-party packages — Python 3.10+ standard library only.
+# Optional developer tooling is listed below. Install what you use with:
+#   pip install -r requirements.txt
+#
+# pytest>=8.0        # unit tests: pytest tests/
+# ruff>=0.6          # linting:    ruff check .
+# mypy>=1.11         # typing:     mypy templates/ solutions/
