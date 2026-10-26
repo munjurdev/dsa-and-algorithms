@@ -1,10 +1,10 @@
 # DSA and Algorithms
 
-A personal, structured **180-day** repository for learning Data Structures and
+A personal, structured **30-day** repository for learning Data Structures and
 Algorithms from fundamentals to advanced interview topics, using **Python** as
 the primary language.
 
-> **Current status: Day 001 not started.** No problems, days, or phases are
+> **Current status: Day 01 not started.** No problems, days, or phases are
 > marked complete anywhere in this repository. Everything you see is the
 > scaffolding — the progress is yours to earn and record in
 > [`PROGRESS.md`](PROGRESS.md).
@@ -12,7 +12,7 @@ the primary language.
 ## Learning objectives
 
 - Work through a day-by-day roadmap from Python fundamentals to graphs,
-  dynamic programming, and advanced topics (Days 001–180).
+  dynamic programming, and advanced topics (Days 01–30).
 - Solve problems consistently and document **every** solution: approach, why
   it works, edge cases, time complexity, space complexity.
 - Track daily and weekly progress honestly in [`PROGRESS.md`](PROGRESS.md).
@@ -32,64 +32,78 @@ the primary language.
 ```
 dsa-and-algorithms/
 ├── README.md              <- you are here
-├── ROADMAP.md             <- Day 001–180, the single source of truth for the schedule
+├── ROADMAP.md             <- Day 01–30, the single source of truth for the schedule
 ├── PROGRESS.md             <- manual daily/weekly tracker (nothing pre-marked)
 ├── CONTRIBUTING.md         <- naming, style, testing, how to add a solution
 ├── LICENSE                 <- MIT
 ├── .gitignore
 ├── requirements.txt
 │
-├── 00-python-fundamentals/         ┐
-├── 01-complexity-analysis/         │
-├── 02-arrays/                      │
-├── ...                              │ one folder per topic, each with a
-├── 19-graphs/                      │ README: purpose, concepts, patterns,
-├── ...                              │ prerequisites, starter problems
-├── 27-patterns-and-revision/       ┘
+├── day-01/
+│   ├── dsa/
+│   │   ├── problem.md      <- write-up: summary, approach, complexity, tests
+│   │   └── solution.py     <- the code, self-testing
+│   └── algorithms/
+│       ├── problem.md
+│       └── solution.py
+├── day-02/
+│   ├── dsa/
+│   └── algorithms/
+├── ...
+├── day-30/
+│   ├── dsa/
+│   └── algorithms/
 │
-├── notes/
-│   ├── python-cheatsheet.md
+├── resources/
 │   ├── complexity-cheatsheet.md
 │   ├── problem-solving-patterns.md
+│   ├── python-cheatsheet.md
 │   ├── common-mistakes.md
-│   └── lessons-learned.md
+│   ├── lessons-learned.md
+│   └── topics/                    <- one write-up per topic, 00–27:
+│       ├── 00-python-fundamentals.md
+│       ├── 01-complexity-analysis.md
+│       ├── 02-arrays.md
+│       └── ... 27-patterns-and-revision.md
 │
 └── templates/
-    ├── problem-template.py         <- copy this for every new solution
+    ├── problem-template.md        <- copy this into day-NN/<track>/problem.md
+    ├── problem-template.py        <- copy this into day-NN/<track>/solution.py
     └── topic-template.md
 ```
 
-Every topic folder has its own `README.md` explaining its purpose, core
-concepts, key patterns, and starter problems — start with
-[`00-python-fundamentals/README.md`](00-python-fundamentals/README.md).
+Every topic write-up in [`resources/topics/`](resources/topics/) explains its
+purpose, core concepts, key patterns, and starter problems — start with
+[`resources/topics/00-python-fundamentals.md`](resources/topics/00-python-fundamentals.md).
 
 ## Roadmap overview
 
 Full detail lives in [`ROADMAP.md`](ROADMAP.md) — one row per day, every day
-from 001 to 180 exactly once.
+from 01 to 30 exactly once, and each row says what belongs in `dsa/` and in
+`algorithms/`.
 
 | Phase | Days | Focus | Days |
 |---|---|---|---|
-| 1 | 001–015 | Python Fundamentals and Complexity Analysis | 15 |
-| 2 | 016–040 | Arrays, Strings, Matrices, and Sorting | 25 |
-| 3 | 041–060 | Hashing, Two Pointers, and Prefix Sums | 20 |
-| 4 | 061–078 | Sliding Window and Binary Search | 18 |
-| 5 | 079–096 | Linked Lists, Stacks, and Queues | 18 |
-| 6 | 097–112 | Recursion and Backtracking | 16 |
-| 7 | 113–131 | Trees, BSTs, Heaps, and Priority Queues | 19 |
-| 8 | 132–150 | Graphs and Graph Algorithms | 19 |
-| 9 | 151–168 | Greedy Algorithms and Dynamic Programming | 18 |
-| 10 | 169–180 | Advanced Topics, Mixed Practice, and Interview Revision | 12 |
+| 1 | 01–03 | Python Fundamentals and Complexity Analysis | 3 |
+| 2 | 04–06 | Arrays, Strings, Matrices, and Sorting | 3 |
+| 3 | 07–09 | Hashing, Two Pointers, and Prefix Sums | 3 |
+| 4 | 10–12 | Sliding Window and Binary Search | 3 |
+| 5 | 13–15 | Linked Lists, Stacks, and Queues | 3 |
+| 6 | 16–18 | Recursion and Backtracking | 3 |
+| 7 | 19–21 | Trees, BSTs, Heaps, and Priority Queues | 3 |
+| 8 | 22–24 | Graphs and Graph Algorithms | 3 |
+| 9 | 25–27 | Greedy Algorithms and Dynamic Programming | 3 |
+| 10 | 28–30 | Advanced Topics, Mixed Practice, and Interview Revision | 3 |
 
-**Built into the schedule:** weekly timed checkpoints (every 7th day), six
-mock interviews plus a final one, and buffer days (015, 046, 090, 121, 145,
-177) for catching up on hard material.
+**Built into the schedule:** weekly timed checkpoints (Days 007, 014, 021,
+028), two mock interviews (Days 015 and 030), and a phase boundary every third
+day for consolidation.
 
 ## Progress summary
 
 | Metric | Value |
 |---|---|
-| Roadmap days | 180 |
+| Roadmap days | 30 |
 | Completed days | 0 |
 | Phases completed | 0 / 10 |
 | Problems solved | 0 (Easy 0 · Medium 0 · Hard 0) |
@@ -98,24 +112,26 @@ _Update these counters in [`PROGRESS.md`](PROGRESS.md) after each session._
 
 ## How to use this repository
 
-1. Read [`ROADMAP.md`](ROADMAP.md) for today's day number — nothing more.
-2. Open the topic folder for that day and read its `README.md`.
-3. Read the topic material; attempt the suggested problem **before** looking
-   at any editorial.
-4. Copy [`templates/problem-template.py`](templates/problem-template.py) into
-   the topic folder, named per [`CONTRIBUTING.md`](CONTRIBUTING.md).
-5. Fill in the docstring (approach, why it works, complexity, edge cases),
-   implement, and run the embedded tests.
-6. Update `PROGRESS.md`: counters, daily log row, and — if today was a
-   checkpoint — the weekly review.
+1. Read today's row in [`ROADMAP.md`](ROADMAP.md) — nothing more.
+2. Read the topic write-up it names, in [`resources/topics/`](resources/topics/),
+   plus the relevant cheatsheet in [`resources/`](resources/).
+3. Attempt the suggested problem **before** looking at any editorial.
+4. Copy [`templates/problem-template.md`](templates/problem-template.md) and
+   [`templates/problem-template.py`](templates/problem-template.py) into the
+   day's `dsa/` or `algorithms/` folder, named `problem.md` and `solution.py`
+   (see [`CONTRIBUTING.md`](CONTRIBUTING.md) for extras).
+5. Fill in `problem.md` (approach, why it works, complexity, edge cases),
+   implement in `solution.py`, and run the embedded tests.
+6. Update `PROGRESS.md`: counters, daily log row, and — at Days 007, 014,
+   021, 028 — the weekly review.
 
 ### Daily learning workflow
 
 ```
 Plan (5 min)   → read today's row in ROADMAP.md, state the goal
-Learn (20-30 min) → topic README + notes/ cheatsheets
-Solve (30-45 min) → attempt first, then implement in the template
-Document (10 min) → approach, complexity, edge cases, review date
+Learn (20-30 min) → topic write-up + resources/ cheatsheets
+Solve (30-45 min) → attempt first, then implement from the templates
+Document (10 min) → problem.md: approach, complexity, edge cases, review date
 Log (5 min)    → PROGRESS.md counters + daily row
 ```
 
@@ -123,7 +139,8 @@ Log (5 min)    → PROGRESS.md counters + daily row
 
 - Only `PROGRESS.md` holds status. Never pre-mark a day.
 - Count a problem as solved only if you can re-derive it from a blank file.
-- Weekly: fill the *Weekly review log* row for the week that just ended.
+- At each checkpoint (Days 007, 014, 021, 028), fill the *Weekly review log*
+  row for the week that just ended.
 - When a topic still feels shaky, add it to *Topics requiring revision* with
   a next-review date.
 
@@ -139,7 +156,8 @@ Log (5 min)    → PROGRESS.md counters + daily row
 
 ```bash
 # from the repository root
-python 02-arrays/0001-two-sum.py
+python day-01/dsa/solution.py
+python day-30/algorithms/solution.py
 ```
 
 Every solution is self-testing: it ends with `assert`s and prints
@@ -155,7 +173,7 @@ python -m compileall .            # syntax check everything
 Fixes to docs, broken links, and clarified explanations are welcome — see
 [`CONTRIBUTING.md`](CONTRIBUTING.md) for naming, Python style, testing
 expectations, and the checklist for adding a solution. If you fork this to
-run your own 180-day cycle, keep `PROGRESS.md` honest and start the counters
+run your own 30-day cycle, keep `PROGRESS.md` honest and start the counters
 from zero.
 
 ## Learning resources
@@ -166,8 +184,8 @@ from zero.
 - [Python official tutorial](https://docs.python.org/3/tutorial/) — language
   reference
 - [Big-O cheat sheet](https://www.bigocheatsheet.com/) — complexity reference
-- In-repo: `notes/python-cheatsheet.md`, `notes/complexity-cheatsheet.md`,
-  `notes/problem-solving-patterns.md`, `notes/common-mistakes.md`
+- In-repo: `resources/python-cheatsheet.md`, `resources/complexity-cheatsheet.md`,
+  `resources/problem-solving-patterns.md`, `resources/common-mistakes.md`
 
 ## License
 

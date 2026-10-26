@@ -1,6 +1,6 @@
 # NN — Topic Name
 
-> Phase X · Roadmap Days NNN–NNN · Folder: `NN-topic-name/`
+> Phase X · Roadmap: see `ROADMAP.md` · File: `resources/topics/NN-topic-name.md`
 
 _One-line statement of what this topic is about and why it matters._
 
@@ -44,11 +44,11 @@ _Add a platform link only when you are certain of the URL._
 - **Before this:** <topics that must be comfortable first>
 - **Next:** <topics that build on this>
 
-## Solutions in this folder
+## Solutions
 
 | File | Problem | Difficulty | Status |
 |---|---|---|---|
 | _none yet_ | | | Not started |
 
-_Use `templates/problem-template.py` for every new file; see `CONTRIBUTING.md`
-for naming rules._
+_Solutions for this topic live under `day-NN/dsa/` and `day-NN/algorithms/`,
+scaffolded from `templates/` — see `CONTRIBUTING.md` for naming rules._

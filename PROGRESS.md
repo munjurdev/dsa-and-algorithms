@@ -8,10 +8,10 @@
 
 | Field | Value |
 |---|---|
-| Start date | `YYYY-MM-DD` _(placeholder — set this on Day 001)_ |
-| Target completion date | `YYYY-MM-DD` _(start date + 180 practice days)_ |
-| Total roadmap days | **180** |
-| Completed days | **0 / 180** |
+| Start date | `YYYY-MM-DD` _(placeholder — set this on Day 01)_ |
+| Target completion date | `YYYY-MM-DD` _(start date + 30 practice days)_ |
+| Total roadmap days | **30** |
+| Completed days | **0 / 30** |
 | Completed phases | **0 / 10** |
 
 ## Overall counters
@@ -31,7 +31,8 @@ Update these after each session.
 ## Topics completed
 
 Mark a topic when every assigned day for it is done **and** you can explain
-its core patterns without notes.
+its core patterns without notes. Topic write-ups live in
+[`resources/topics/`](resources/topics/).
 
 - [ ] 00 Python Fundamentals
 - [ ] 01 Complexity Analysis
@@ -74,68 +75,67 @@ List anything that still feels shaky. Re-review before moving on.
 
 | Phase | Days | Status |
 |---|---|---|
-| 1 — Python Fundamentals and Complexity Analysis | 001–015 | Not started |
-| 2 — Arrays, Strings, Matrices, and Sorting | 016–040 | Not started |
-| 3 — Hashing, Two Pointers, and Prefix Sums | 041–060 | Not started |
-| 4 — Sliding Window and Binary Search | 061–078 | Not started |
-| 5 — Linked Lists, Stacks, and Queues | 079–096 | Not started |
-| 6 — Recursion and Backtracking | 097–112 | Not started |
-| 7 — Trees, BSTs, Heaps, and Priority Queues | 113–131 | Not started |
-| 8 — Graphs and Graph Algorithms | 132–150 | Not started |
-| 9 — Greedy Algorithms and Dynamic Programming | 151–168 | Not started |
-| 10 — Advanced Topics, Mixed Practice, and Interview Revision | 169–180 | Not started |
+| 1 — Python Fundamentals and Complexity Analysis | 01–03 | Not started |
+| 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Not started |
+| 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | Not started |
+| 4 — Sliding Window and Binary Search | 10–12 | Not started |
+| 5 — Linked Lists, Stacks, and Queues | 13–15 | Not started |
+| 6 — Recursion and Backtracking | 16–18 | Not started |
+| 7 — Trees, BSTs, Heaps, and Priority Queues | 19–21 | Not started |
+| 8 — Graphs and Graph Algorithms | 22–24 | Not started |
+| 9 — Greedy Algorithms and Dynamic Programming | 25–27 | Not started |
+| 10 — Advanced Topics, Mixed Practice, and Interview Revision | 28–30 | Not started |
 
 ## Daily log
 
-Add one row per study day. `Day` must match the day number in
-[`ROADMAP.md`](ROADMAP.md). Leave `Done?` unchecked until the day's
-completion criterion is actually met.
+One row per study day. `Day` matches the folder `day-NN/`. Leave `Done?`
+unchecked until both tracks (`dsa/` and `algorithms/`) meet the day's
+completion criterion in [`ROADMAP.md`](ROADMAP.md).
 
-| Day | Date | Topic | Problems | Difficulty (E/M/H) | Done? | Notes |
+| Day | Date | Topics | dsa/ done? | algorithms/ done? | Done? | Notes |
 |---|---|---|---|---|---|---|
-| 001 | | | | | [ ] | |
-| 002 | | | | | [ ] | |
-| 003 | | | | | [ ] | |
-| 004 | | | | | [ ] | |
-| 005 | | | | | [ ] | |
-| 006 | | | | | [ ] | |
-| 007 | | | | | [ ] | |
-
-_Copy the block above (`| 001 | ... | 007 |`) for each subsequent week, or
-maintain the full 180-row table in a fork of this file._
+| 01 | | | [ ] | [ ] | [ ] | |
+| 02 | | | [ ] | [ ] | [ ] | |
+| 03 | | | [ ] | [ ] | [ ] | |
+| 04 | | | [ ] | [ ] | [ ] | |
+| 05 | | | [ ] | [ ] | [ ] | |
+| 06 | | | [ ] | [ ] | [ ] | |
+| 07 | | | [ ] | [ ] | [ ] | |
+| 08 | | | [ ] | [ ] | [ ] | |
+| 09 | | | [ ] | [ ] | [ ] | |
+| 10 | | | [ ] | [ ] | [ ] | |
+| 11 | | | [ ] | [ ] | [ ] | |
+| 12 | | | [ ] | [ ] | [ ] | |
+| 13 | | | [ ] | [ ] | [ ] | |
+| 14 | | | [ ] | [ ] | [ ] | |
+| 15 | | | [ ] | [ ] | [ ] | |
+| 16 | | | [ ] | [ ] | [ ] | |
+| 17 | | | [ ] | [ ] | [ ] | |
+| 18 | | | [ ] | [ ] | [ ] | |
+| 19 | | | [ ] | [ ] | [ ] | |
+| 20 | | | [ ] | [ ] | [ ] | |
+| 21 | | | [ ] | [ ] | [ ] | |
+| 22 | | | [ ] | [ ] | [ ] | |
+| 23 | | | [ ] | [ ] | [ ] | |
+| 24 | | | [ ] | [ ] | [ ] | |
+| 25 | | | [ ] | [ ] | [ ] | |
+| 26 | | | [ ] | [ ] | [ ] | |
+| 27 | | | [ ] | [ ] | [ ] | |
+| 28 | | | [ ] | [ ] | [ ] | |
+| 29 | | | [ ] | [ ] | [ ] | |
+| 30 | | | [ ] | [ ] | [ ] | |
 
 ## Weekly review log
 
-Complete every Sunday (or your rest day).
+Complete at each checkpoint (Days 007, 014, 021, 028) and at the end.
 
 | Week | Days | What went well | What was hard | Revision needed | Plan for next week |
 |---|---|---|---|---|---|
-| 1 | 001–007 | | | | |
-| 2 | 008–014 | | | | |
-| 3 | 015–021 | | | | |
-| 4 | 022–028 | | | | |
-| 5 | 029–035 | | | | |
-| 6 | 036–042 | | | | |
-| 7 | 043–049 | | | | |
-| 8 | 050–056 | | | | |
-| 9 | 057–063 | | | | |
-| 10 | 064–070 | | | | |
-| 11 | 071–077 | | | | |
-| 12 | 078–084 | | | | |
-| 13 | 085–091 | | | | |
-| 14 | 092–098 | | | | |
-| 15 | 099–105 | | | | |
-| 16 | 106–112 | | | | |
-| 17 | 113–119 | | | | |
-| 18 | 120–126 | | | | |
-| 19 | 127–133 | | | | |
-| 20 | 134–140 | | | | |
-| 21 | 141–147 | | | | |
-| 22 | 148–154 | | | | |
-| 23 | 155–161 | | | | |
-| 24 | 162–168 | | | | |
-| 25 | 169–175 | | | | |
-| 26 | 176–180 | | | | |
+| 1 | 01–07 | | | | |
+| 2 | 08–14 | | | | |
+| 3 | 15–21 | | | | |
+| 4 | 22–28 | | | | |
+| 5 | 29–30 | | | | |
 
 ## Rules for this file
 
