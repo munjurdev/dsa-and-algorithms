@@ -1,49 +1,49 @@
 """
-Solution for: <name>                       # e.g. Two Sum
-Day:      day-01                            # must match the folder, e.g. day-07
-Track:    dsa                               # must match the folder this file sits in
-Difficulty: Easy | Medium | Hard
+Solution for: Reverse Words in a String
+Day:      day-01
+Track:    dsa
+Difficulty: Easy
 
 Full write-up (summary, approach, edge cases, tests, review date) lives in
 `problem.md` next to this file. Keep only the essentials here.
 
 Approach (one paragraph):
-    <the algorithm in words — the detail belongs in problem.md>
+    Split the input on whitespace with `str.split()` (no argument), which
+    drops leading, trailing, and repeated spaces and yields the words in
+    their original order. Reverse the resulting list with `[::-1]` and join
+    with a single space — exactly the normalised output the problem wants.
 
-Time Complexity:  O(...)   # justify in one clause
-Space Complexity: O(...)   # justify in one clause
+Time Complexity:  O(n)   # one split pass + one join pass over n characters
+Space Complexity: O(n)   # the word list stores at most n characters
 
-Review Date:  <YYYY-MM-DD — schedule 1 day, 7 days, and 30 days out>
+Review Date:  2026-11-02 / 2026-11-08 / 2026-12-01
 """
 
 from __future__ import annotations
 
 
-def solve(nums: list[int], target: int) -> int:
-    """Replace `solve` with a descriptive name once the problem is clear.
+def reverse_words(sentence: str) -> str:
+    """Return `sentence` with its words reversed and whitespace normalised.
 
     Args:
-        nums: <input description>
-        target: <what it means>
+        sentence: raw text; words are separated by arbitrary whitespace runs.
 
     Returns:
-        <what the caller gets back>
-
-    Raises:
-        ValueError: <only if the problem defines invalid input behavior>
+        Words in reverse order joined by single spaces; `""` for blank input.
     """
-    # --- Solution -------------------------------------------------------
-    # Keep this section honest: only code you understand line by line.
-    raise NotImplementedError
+    words: list[str] = sentence.split()
+    return " ".join(words[::-1])
 
 
 def main() -> None:
     """Run a few checks. Every solution must pass these before you mark it done."""
     # Typical case
-    assert solve([2, 7, 11, 15], 9) == ...  # expected: fill in
+    assert reverse_words("the sky is blue") == "blue is sky the"
     # Edge cases
-    assert solve([], 0) == ...               # empty input
-    assert solve([1], 1) == ...              # single element
+    assert reverse_words("") == ""                              # empty input
+    assert reverse_words("   ") == ""                           # whitespace only
+    assert reverse_words("a") == "a"                            # single element
+    assert reverse_words("  hello   world  ") == "world hello"  # space runs
     print("All tests passed.")
 
 
