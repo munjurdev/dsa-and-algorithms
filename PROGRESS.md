@@ -1,18 +1,18 @@
 # Progress Tracker
 
-> **Status: not started.** No day is marked complete in this file. Update it
-> manually after each study session — honesty here is what makes the tracker
-> useful.
+> **Status: Day 06 of 30 complete.** Phases 1 and 2 are done; Day 07 starts
+> Phase 3. Update this file manually after each study session — honesty here is
+> what makes the tracker useful.
 
 ## Run constants
 
 | Field | Value |
 |---|---|
-| Start date | `YYYY-MM-DD` _(placeholder — set this on Day 01)_ |
-| Target completion date | `YYYY-MM-DD` _(start date + 30 practice days)_ |
+| Start date | `2026-11-01` |
+| Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **0 / 30** |
-| Completed phases | **0 / 10** |
+| Completed days | **6 / 30** |
+| Completed phases | **2 / 10** |
 
 ## Overall counters
 
@@ -20,9 +20,9 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 0 |
-| — Easy | 0 |
-| — Medium | 0 |
+| Problems solved | 12 |
+| — Easy | 6 |
+| — Medium | 6 |
 | — Hard | 0 |
 | Revision reviews done | 0 |
 | Mock interviews completed | 0 |
@@ -34,12 +34,12 @@ Mark a topic when every assigned day for it is done **and** you can explain
 its core patterns without notes. Topic write-ups live in
 [`resources/topics/`](resources/topics/).
 
-- [ ] 00 Python Fundamentals
-- [ ] 01 Complexity Analysis
-- [ ] 02 Arrays
-- [ ] 03 Strings
-- [ ] 04 Matrices
-- [ ] 05 Sorting
+- [x] 00 Python Fundamentals
+- [x] 01 Complexity Analysis
+- [x] 02 Arrays
+- [x] 03 Strings
+- [x] 04 Matrices
+- [x] 05 Sorting
 - [ ] 06 Hashing
 - [ ] 07 Two Pointers
 - [ ] 08 Prefix Sum
@@ -75,8 +75,8 @@ List anything that still feels shaky. Re-review before moving on.
 
 | Phase | Days | Status |
 |---|---|---|
-| 1 — Python Fundamentals and Complexity Analysis | 01–03 | Not started |
-| 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Not started |
+| 1 — Python Fundamentals and Complexity Analysis | 01–03 | Complete |
+| 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Complete |
 | 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | Not started |
 | 4 — Sliding Window and Binary Search | 10–12 | Not started |
 | 5 — Linked Lists, Stacks, and Queues | 13–15 | Not started |
@@ -94,12 +94,12 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 
 | Day | Date | Topics | dsa/ done? | algorithms/ done? | Done? | Notes |
 |---|---|---|---|---|---|---|
-| 01 | | | [ ] | [ ] | [ ] | |
-| 02 | | | [ ] | [ ] | [ ] | |
-| 03 | | | [ ] | [ ] | [ ] | |
-| 04 | | | [ ] | [ ] | [ ] | |
-| 05 | | | [ ] | [ ] | [ ] | |
-| 06 | | | [ ] | [ ] | [ ] | |
+| 01 | 2026-11-01 | `00-python-fundamentals` | [x] | [x] | [x] | Reverse Words in a String; FizzBuzz + top-k frequency drill |
+| 02 | 2026-11-01 | `00-python-fundamentals` | [x] | [x] | [x] | Valid Anagram; word-frequency analyzer (one pass, typed pure functions) |
+| 03 | 2026-11-03 | `01-complexity-analysis` | [x] | [x] | [x] | Constraint range → allowed complexity map; 10 snippets classified |
+| 04 | 2026-11-05 | `02-arrays` | [x] | [x] | [x] | Two Sum (hash, O(n)); Maximum Subarray (Kadane, all-negative case) |
+| 05 | 2026-11-07 | `03-strings`, `04-matrices` | [x] | [x] | [x] | Valid Palindrome (both variants agree); Spiral Matrix (1×n and n×1 exact) |
+| 06 | 2026-11-08 | `05-sorting` | [x] | [x] | [x] | Merge Intervals (touching merged); merge sort vs `sorted()`, `n·⌈log₂ n⌉` bound checked |
 | 07 | | | [ ] | [ ] | [ ] | |
 | 08 | | | [ ] | [ ] | [ ] | |
 | 09 | | | [ ] | [ ] | [ ] | |
