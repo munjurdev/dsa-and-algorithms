@@ -1,8 +1,8 @@
 # Progress Tracker
 
-> **Status: Day 06 of 30 complete.** Phases 1 and 2 are done; Day 07 starts
-> Phase 3. Update this file manually after each study session — honesty here is
-> what makes the tracker useful.
+> **Status: Day 07 of 30 complete.** Phases 1 and 2 are done and weekly
+> checkpoint 01 passed; Day 08 continues Phase 3. Update this file manually
+> after each study session — honesty here is what makes the tracker useful.
 
 ## Run constants
 
@@ -11,7 +11,7 @@
 | Start date | `2026-11-01` |
 | Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **6 / 30** |
+| Completed days | **7 / 30** |
 | Completed phases | **2 / 10** |
 
 ## Overall counters
@@ -20,13 +20,13 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 12 |
-| — Easy | 6 |
+| Problems solved | 13 |
+| — Easy | 7 |
 | — Medium | 6 |
 | — Hard | 0 |
-| Revision reviews done | 0 |
+| Revision reviews done | 4 |
 | Mock interviews completed | 0 |
-| Timed practice sessions | 0 |
+| Timed practice sessions | 1 |
 
 ## Topics completed
 
@@ -40,7 +40,7 @@ its core patterns without notes. Topic write-ups live in
 - [x] 03 Strings
 - [x] 04 Matrices
 - [x] 05 Sorting
-- [ ] 06 Hashing
+- [x] 06 Hashing
 - [ ] 07 Two Pointers
 - [ ] 08 Prefix Sum
 - [ ] 09 Sliding Window
@@ -77,7 +77,7 @@ List anything that still feels shaky. Re-review before moving on.
 |---|---|---|
 | 1 — Python Fundamentals and Complexity Analysis | 01–03 | Complete |
 | 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Complete |
-| 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | Not started |
+| 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | In progress — Day 07 done |
 | 4 — Sliding Window and Binary Search | 10–12 | Not started |
 | 5 — Linked Lists, Stacks, and Queues | 13–15 | Not started |
 | 6 — Recursion and Backtracking | 16–18 | Not started |
@@ -100,7 +100,7 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 | 04 | 2026-11-05 | `02-arrays` | [x] | [x] | [x] | Two Sum (hash, O(n)); Maximum Subarray (Kadane, all-negative case) |
 | 05 | 2026-11-07 | `03-strings`, `04-matrices` | [x] | [x] | [x] | Valid Palindrome (both variants agree); Spiral Matrix (1×n and n×1 exact) |
 | 06 | 2026-11-08 | `05-sorting` | [x] | [x] | [x] | Merge Intervals (touching merged); merge sort vs `sorted()`, `n·⌈log₂ n⌉` bound checked |
-| 07 | | | [ ] | [ ] | [ ] | |
+| 07 | 2026-11-09 | `06-hashing` | [x] | [x] | [x] | Two Sum re-derived from blank (value→index map, earliest pair); checkpoint 01: 4/4 closed-notes re-solves |
 | 08 | | | [ ] | [ ] | [ ] | |
 | 09 | | | [ ] | [ ] | [ ] | |
 | 10 | | | [ ] | [ ] | [ ] | |
@@ -131,7 +131,7 @@ Complete at each checkpoint (Days 007, 014, 021, 028) and at the end.
 
 | Week | Days | What went well | What was hard | Revision needed | Plan for next week |
 |---|---|---|---|---|---|
-| 1 | 01–07 | | | | |
+| 1 | 01–07 | Every day logged; hash-map pattern re-derived from a blank file; differential tests written for every solution instead of relying on remembered outputs | Spiral's single-row/single-column guards and interval nesting ends are the two details that had to be re-worked under time pressure | None from checkpoint 01 (4/4 re-derived); Day 04/05 spaced re-solves stay due on their recorded dates | Phase 3: two pointers on Day 08, prefix sums on Day 09, then sliding window |
 | 2 | 08–14 | | | | |
 | 3 | 15–21 | | | | |
 | 4 | 22–28 | | | | |
