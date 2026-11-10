@@ -1,7 +1,7 @@
 # Progress Tracker
 
-> **Status: Day 07 of 30 complete.** Phases 1 and 2 are done and weekly
-> checkpoint 01 passed; Day 08 continues Phase 3. Update this file manually
+> **Status: Day 08 of 30 complete.** Phases 1 and 2 are done and weekly
+> checkpoint 01 passed; Day 09 continues Phase 3. Update this file manually
 > after each study session — honesty here is what makes the tracker useful.
 
 ## Run constants
@@ -11,7 +11,7 @@
 | Start date | `2026-11-01` |
 | Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **7 / 30** |
+| Completed days | **8 / 30** |
 | Completed phases | **2 / 10** |
 
 ## Overall counters
@@ -20,9 +20,9 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 13 |
+| Problems solved | 15 |
 | — Easy | 7 |
-| — Medium | 6 |
+| — Medium | 8 |
 | — Hard | 0 |
 | Revision reviews done | 4 |
 | Mock interviews completed | 0 |
@@ -41,7 +41,7 @@ its core patterns without notes. Topic write-ups live in
 - [x] 04 Matrices
 - [x] 05 Sorting
 - [x] 06 Hashing
-- [ ] 07 Two Pointers
+- [x] 07 Two Pointers
 - [ ] 08 Prefix Sum
 - [ ] 09 Sliding Window
 - [ ] 10 Binary Search
@@ -77,7 +77,7 @@ List anything that still feels shaky. Re-review before moving on.
 |---|---|---|
 | 1 — Python Fundamentals and Complexity Analysis | 01–03 | Complete |
 | 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Complete |
-| 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | In progress — Day 07 done |
+| 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | In progress — Day 08 done |
 | 4 — Sliding Window and Binary Search | 10–12 | Not started |
 | 5 — Linked Lists, Stacks, and Queues | 13–15 | Not started |
 | 6 — Recursion and Backtracking | 16–18 | Not started |
@@ -101,7 +101,7 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 | 05 | 2026-11-07 | `03-strings`, `04-matrices` | [x] | [x] | [x] | Valid Palindrome (both variants agree); Spiral Matrix (1×n and n×1 exact) |
 | 06 | 2026-11-08 | `05-sorting` | [x] | [x] | [x] | Merge Intervals (touching merged); merge sort vs `sorted()`, `n·⌈log₂ n⌉` bound checked |
 | 07 | 2026-11-09 | `06-hashing` | [x] | [x] | [x] | Two Sum re-derived from blank (value→index map, earliest pair); checkpoint 01: 4/4 closed-notes re-solves |
-| 08 | | | [ ] | [ ] | [ ] | |
+| 08 | 2026-11-10 | `07-two-pointers` | [x] | [x] | [x] | 3Sum (sort + fix one + skip duplicates, no repeated triplets); Container With Most Water (move the smaller side, differential-checked) |
 | 09 | | | [ ] | [ ] | [ ] | |
 | 10 | | | [ ] | [ ] | [ ] | |
 | 11 | | | [ ] | [ ] | [ ] | |
