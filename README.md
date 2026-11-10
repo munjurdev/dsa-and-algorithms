@@ -4,9 +4,9 @@ A personal, structured **30-day** repository for learning Data Structures and
 Algorithms from fundamentals to advanced interview topics, using **Python** as
 the primary language.
 
-> **Current status: Day 08 of 30 complete.** Phases 1 and 2 are finished and
-> recorded in [`PROGRESS.md`](PROGRESS.md); weekly checkpoint 01 passed, and
-> Day 09 continues Phase 3. The counters below are updated after each session —
+> **Current status: Day 09 of 30 complete.** Phases 1, 2, and 3 are finished
+> and recorded in [`PROGRESS.md`](PROGRESS.md); weekly checkpoint 01 passed,
+> and Day 10 opens Phase 4. The counters below are updated after each session —
 > never in advance.
 
 ## Learning objectives
@@ -104,9 +104,9 @@ day for consolidation.
 | Metric | Value |
 |---|---|
 | Roadmap days | 30 |
-| Completed days | 8 |
-| Phases completed | 2 / 10 |
-| Problems solved | 15 (Easy 7 · Medium 8 · Hard 0) |
+| Completed days | 9 |
+| Phases completed | 3 / 10 |
+| Problems solved | 17 (Easy 7 · Medium 10 · Hard 0) |
 
 _Update these counters in [`PROGRESS.md`](PROGRESS.md) after each session._
 
