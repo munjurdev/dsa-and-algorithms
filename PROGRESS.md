@@ -1,8 +1,9 @@
 # Progress Tracker
 
-> **Status: Day 09 of 30 complete.** Phases 1, 2, and 3 are done and weekly
-> checkpoint 01 passed; Day 10 opens Phase 4. Update this file manually
-> after each study session — honesty here is what makes the tracker useful.
+> **Status: Day 10 of 30 complete.** Phases 1, 2, and 3 are done, weekly
+> checkpoint 01 passed, and Phase 4 is underway; Day 11 continues it. Update
+> this file manually after each study session — honesty here is what makes the
+> tracker useful.
 
 ## Run constants
 
@@ -11,7 +12,7 @@
 | Start date | `2026-11-01` |
 | Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **9 / 30** |
+| Completed days | **10 / 30** |
 | Completed phases | **3 / 10** |
 
 ## Overall counters
@@ -20,9 +21,9 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 17 |
-| — Easy | 7 |
-| — Medium | 10 |
+| Problems solved | 19 |
+| — Easy | 8 |
+| — Medium | 11 |
 | — Hard | 0 |
 | Revision reviews done | 4 |
 | Mock interviews completed | 0 |
@@ -78,7 +79,7 @@ List anything that still feels shaky. Re-review before moving on.
 | 1 — Python Fundamentals and Complexity Analysis | 01–03 | Complete |
 | 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Complete |
 | 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | Complete |
-| 4 — Sliding Window and Binary Search | 10–12 | Not started |
+| 4 — Sliding Window and Binary Search | 10–12 | In progress |
 | 5 — Linked Lists, Stacks, and Queues | 13–15 | Not started |
 | 6 — Recursion and Backtracking | 16–18 | Not started |
 | 7 — Trees, BSTs, Heaps, and Priority Queues | 19–21 | Not started |
@@ -103,7 +104,7 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 | 07 | 2026-11-09 | `06-hashing` | [x] | [x] | [x] | Two Sum re-derived from blank (value→index map, earliest pair); checkpoint 01: 4/4 closed-notes re-solves |
 | 08 | 2026-11-10 | `07-two-pointers` | [x] | [x] | [x] | 3Sum (sort + fix one + skip duplicates, no repeated triplets); Container With Most Water (move the smaller side, differential-checked) |
 | 09 | 2026-11-10 | `08-prefix-sum` | [x] | [x] | [x] | Subarray Sum Equals K (empty prefix seeded, counts not overwrites); Product of Array Except Self (prefix/suffix, no division, O(1) extra space) |
-| 10 | | | [ ] | [ ] | [ ] | |
+| 10 | 2026-11-11 | `09-sliding-window` | [x] | [x] | [x] | Longest Substring Without Repeating Characters (left jumps past the repeat, never rewinds); Maximum Average Subarray I (k-sum slide, best seeded from the first window) |
 | 11 | | | [ ] | [ ] | [ ] | |
 | 12 | | | [ ] | [ ] | [ ] | |
 | 13 | | | [ ] | [ ] | [ ] | |
