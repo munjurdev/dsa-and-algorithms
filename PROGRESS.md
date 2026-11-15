@@ -1,7 +1,7 @@
 # Progress Tracker
 
-> **Status: Day 10 of 30 complete.** Phases 1, 2, and 3 are done, weekly
-> checkpoint 01 passed, and Phase 4 is underway; Day 11 continues it. Update
+> **Status: Day 11 of 30 complete.** Phases 1, 2, and 3 are done, weekly
+> checkpoint 01 passed, and Phase 4 is underway; Day 12 continues it. Update
 > this file manually after each study session — honesty here is what makes the
 > tracker useful.
 
@@ -12,7 +12,7 @@
 | Start date | `2026-11-01` |
 | Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **10 / 30** |
+| Completed days | **11 / 30** |
 | Completed phases | **3 / 10** |
 
 ## Overall counters
@@ -21,10 +21,10 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 19 |
+| Problems solved | 21 |
 | — Easy | 8 |
-| — Medium | 11 |
-| — Hard | 0 |
+| — Medium | 12 |
+| — Hard | 1 |
 | Revision reviews done | 4 |
 | Mock interviews completed | 0 |
 | Timed practice sessions | 1 |
@@ -44,7 +44,7 @@ its core patterns without notes. Topic write-ups live in
 - [x] 06 Hashing
 - [x] 07 Two Pointers
 - [x] 08 Prefix Sum
-- [ ] 09 Sliding Window
+- [x] 09 Sliding Window
 - [ ] 10 Binary Search
 - [ ] 11 Linked List
 - [ ] 12 Stack
@@ -105,7 +105,7 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 | 08 | 2026-11-10 | `07-two-pointers` | [x] | [x] | [x] | 3Sum (sort + fix one + skip duplicates, no repeated triplets); Container With Most Water (move the smaller side, differential-checked) |
 | 09 | 2026-11-10 | `08-prefix-sum` | [x] | [x] | [x] | Subarray Sum Equals K (empty prefix seeded, counts not overwrites); Product of Array Except Self (prefix/suffix, no division, O(1) extra space) |
 | 10 | 2026-11-11 | `09-sliding-window` | [x] | [x] | [x] | Longest Substring Without Repeating Characters (left jumps past the repeat, never rewinds); Maximum Average Subarray I (k-sum slide, best seeded from the first window) |
-| 11 | | | [ ] | [ ] | [ ] | |
+| 11 | 2026-11-15 | `09-sliding-window` | [x] | [x] | [x] | Minimum Window Substring (need/surplus counts, repeated requirements worked); Find All Anagrams in a String (fixed-width counter equality, overlapping matches) |
 | 12 | | | [ ] | [ ] | [ ] | |
 | 13 | | | [ ] | [ ] | [ ] | |
 | 14 | | | [ ] | [ ] | [ ] | |
