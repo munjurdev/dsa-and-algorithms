@@ -1,9 +1,8 @@
 # Progress Tracker
 
-> **Status: Day 11 of 30 complete.** Phases 1, 2, and 3 are done, weekly
-> checkpoint 01 passed, and Phase 4 is underway; Day 12 continues it. Update
-> this file manually after each study session — honesty here is what makes the
-> tracker useful.
+> **Status: Day 12 of 30 complete.** Phases 1, 2, 3, and 4 are done, weekly
+> checkpoint 01 passed, and Phase 5 starts on Day 13. Update this file manually
+> after each study session — honesty here is what makes the tracker useful.
 
 ## Run constants
 
@@ -12,8 +11,8 @@
 | Start date | `2026-11-01` |
 | Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **11 / 30** |
-| Completed phases | **3 / 10** |
+| Completed days | **12 / 30** |
+| Completed phases | **4 / 10** |
 
 ## Overall counters
 
@@ -21,9 +20,9 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 21 |
+| Problems solved | 23 |
 | — Easy | 8 |
-| — Medium | 12 |
+| — Medium | 14 |
 | — Hard | 1 |
 | Revision reviews done | 4 |
 | Mock interviews completed | 0 |
@@ -45,7 +44,7 @@ its core patterns without notes. Topic write-ups live in
 - [x] 07 Two Pointers
 - [x] 08 Prefix Sum
 - [x] 09 Sliding Window
-- [ ] 10 Binary Search
+- [x] 10 Binary Search
 - [ ] 11 Linked List
 - [ ] 12 Stack
 - [ ] 13 Queue and Deque
@@ -79,7 +78,7 @@ List anything that still feels shaky. Re-review before moving on.
 | 1 — Python Fundamentals and Complexity Analysis | 01–03 | Complete |
 | 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Complete |
 | 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | Complete |
-| 4 — Sliding Window and Binary Search | 10–12 | In progress |
+| 4 — Sliding Window and Binary Search | 10–12 | Complete |
 | 5 — Linked Lists, Stacks, and Queues | 13–15 | Not started |
 | 6 — Recursion and Backtracking | 16–18 | Not started |
 | 7 — Trees, BSTs, Heaps, and Priority Queues | 19–21 | Not started |
@@ -106,7 +105,7 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 | 09 | 2026-11-10 | `08-prefix-sum` | [x] | [x] | [x] | Subarray Sum Equals K (empty prefix seeded, counts not overwrites); Product of Array Except Self (prefix/suffix, no division, O(1) extra space) |
 | 10 | 2026-11-11 | `09-sliding-window` | [x] | [x] | [x] | Longest Substring Without Repeating Characters (left jumps past the repeat, never rewinds); Maximum Average Subarray I (k-sum slide, best seeded from the first window) |
 | 11 | 2026-11-15 | `09-sliding-window` | [x] | [x] | [x] | Minimum Window Substring (need/surplus counts, repeated requirements worked); Find All Anagrams in a String (fixed-width counter equality, overlapping matches) |
-| 12 | | | [ ] | [ ] | [ ] | |
+| 12 | 2026-11-18 | `10-binary-search` | [x] | [x] | [x] | Search in Rotated Sorted Array (sorted-half test, exhaustive rotation differential check); Koko Eating Bananas (monotone `Σ ⌈p/k⌉ ≤ h` predicate, ceiling division and `hi = mid` bounds checked) |
 | 13 | | | [ ] | [ ] | [ ] | |
 | 14 | | | [ ] | [ ] | [ ] | |
 | 15 | | | [ ] | [ ] | [ ] | |
