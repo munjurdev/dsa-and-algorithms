@@ -1,8 +1,8 @@
 # Progress Tracker
 
-> **Status: Day 13 of 30 complete.** Phases 1–4 are done, weekly checkpoint 01
-> passed, and Phase 5 is underway; Day 14 is weekly checkpoint 02. Update this
-> file manually after each study session — honesty here is what makes the
+> **Status: Day 14 of 30 complete.** Phases 1–4 are done, weekly checkpoints 01
+> and 02 passed, and Phase 5 is underway; Day 15 is mock interview #1. Update
+> this file manually after each study session — honesty here is what makes the
 > tracker useful.
 
 ## Run constants
@@ -12,7 +12,7 @@
 | Start date | `2026-11-01` |
 | Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **13 / 30** |
+| Completed days | **14 / 30** |
 | Completed phases | **4 / 10** |
 
 ## Overall counters
@@ -21,13 +21,13 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 25 |
-| — Easy | 10 |
-| — Medium | 14 |
+| Problems solved | 27 |
+| — Easy | 11 |
+| — Medium | 15 |
 | — Hard | 1 |
-| Revision reviews done | 4 |
+| Revision reviews done | 5 |
 | Mock interviews completed | 0 |
-| Timed practice sessions | 1 |
+| Timed practice sessions | 2 |
 
 ## Topics completed
 
@@ -47,7 +47,7 @@ its core patterns without notes. Topic write-ups live in
 - [x] 09 Sliding Window
 - [x] 10 Binary Search
 - [x] 11 Linked List
-- [ ] 12 Stack
+- [x] 12 Stack
 - [ ] 13 Queue and Deque
 - [ ] 14 Recursion
 - [ ] 15 Backtracking
@@ -108,7 +108,7 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 | 11 | 2026-11-15 | `09-sliding-window` | [x] | [x] | [x] | Minimum Window Substring (need/surplus counts, repeated requirements worked); Find All Anagrams in a String (fixed-width counter equality, overlapping matches) |
 | 12 | 2026-11-18 | `10-binary-search` | [x] | [x] | [x] | Search in Rotated Sorted Array (sorted-half test, exhaustive rotation differential check); Koko Eating Bananas (monotone `Σ ⌈p/k⌉ ≤ h` predicate, ceiling division and `hi = mid` bounds checked) |
 | 13 | 2026-11-18 | `11-linked-list` | [x] | [x] | [x] | Reverse Linked List (iterative + recursive, in-place node identity asserted); Linked List Cycle (Floyd, identity not value comparison, visited-set differential check) |
-| 14 | | | [ ] | [ ] | [ ] | |
+| 14 | 2026-11-19 | `12-stack` | [x] | [x] | [x] | Valid Parentheses (stack + closer map, erase-pairs oracle over all 55,987 strings up to length 6); checkpoint 02: 3/3 closed-notes re-solves (Container With Most Water, Find All Anagrams, Search in Rotated Sorted Array) + `list.pop(0)` is O(n) — measured 4× growth per doubling |
 | 15 | | | [ ] | [ ] | [ ] | |
 | 16 | | | [ ] | [ ] | [ ] | |
 | 17 | | | [ ] | [ ] | [ ] | |
@@ -133,7 +133,7 @@ Complete at each checkpoint (Days 007, 014, 021, 028) and at the end.
 | Week | Days | What went well | What was hard | Revision needed | Plan for next week |
 |---|---|---|---|---|---|
 | 1 | 01–07 | Every day logged; hash-map pattern re-derived from a blank file; differential tests written for every solution instead of relying on remembered outputs | Spiral's single-row/single-column guards and interval nesting ends are the two details that had to be re-worked under time pressure | None from checkpoint 01 (4/4 re-derived); Day 04/05 spaced re-solves stay due on their recorded dates | Phase 3: two pointers on Day 08, prefix sums on Day 09, then sliding window |
-| 2 | 08–14 | | | | |
+| 2 | 08–14 | Checkpoint 02 closed 3/3 from blank files; every re-solve was checked against an independent oracle (brute force, sorted-window, exhaustive rotations) instead of remembered examples; structural costs were measured rather than asserted | The anagram window has two traps a rebuilt-from-blank version can fall into — stepping by `len(p)` (drops overlapping matches) and re-counting each window (turns O(n) into O(n·m)); the container's discard proof needed re-deriving before the pointer rule felt justified | None from checkpoint 02 (3/3 re-derived); Day 11/12 anagram and rotated-search re-solves stay due on their recorded spaced-review dates | Day 15 mock interview #1 (queue/deque + stack), thinking aloud with a complexity defense |
 | 3 | 15–21 | | | | |
 | 4 | 22–28 | | | | |
 | 5 | 29–30 | | | | |
