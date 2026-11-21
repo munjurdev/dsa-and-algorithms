@@ -1,7 +1,7 @@
 # Progress Tracker
 
-> **Status: Day 14 of 30 complete.** Phases 1–4 are done, weekly checkpoints 01
-> and 02 passed, and Phase 5 is underway; Day 15 is mock interview #1. Update
+> **Status: Day 15 of 30 complete.** Phases 1–5 are done, weekly checkpoints 01
+> and 02 and mock interview #1 are recorded, and Day 16 opens Phase 6. Update
 > this file manually after each study session — honesty here is what makes the
 > tracker useful.
 
@@ -12,8 +12,8 @@
 | Start date | `2026-11-01` |
 | Target completion date | `2026-12-01` _(start date + 30 practice days)_ |
 | Total roadmap days | **30** |
-| Completed days | **14 / 30** |
-| Completed phases | **4 / 10** |
+| Completed days | **15 / 30** |
+| Completed phases | **5 / 10** |
 
 ## Overall counters
 
@@ -21,12 +21,12 @@ Update these after each session.
 
 | Metric | Count |
 |---|---|
-| Problems solved | 27 |
-| — Easy | 11 |
+| Problems solved | 29 |
+| — Easy | 12 |
 | — Medium | 15 |
-| — Hard | 1 |
+| — Hard | 2 |
 | Revision reviews done | 5 |
-| Mock interviews completed | 0 |
+| Mock interviews completed | 1 |
 | Timed practice sessions | 2 |
 
 ## Topics completed
@@ -48,7 +48,7 @@ its core patterns without notes. Topic write-ups live in
 - [x] 10 Binary Search
 - [x] 11 Linked List
 - [x] 12 Stack
-- [ ] 13 Queue and Deque
+- [x] 13 Queue and Deque
 - [ ] 14 Recursion
 - [ ] 15 Backtracking
 - [ ] 16 Trees
@@ -70,7 +70,7 @@ List anything that still feels shaky. Re-review before moving on.
 
 | Topic | Last reviewed | Next review | Notes |
 |---|---|---|---|
-| _none yet_ | | | |
+| 13 Queue and Deque | 2026-11-21 | 2026-11-22 | Mock #1: `list.pop(0)` cost and the two-stack amortized argument need a re-derive; monotonic deque expiry order cost a hint |
 
 ## Phase checklist
 
@@ -80,7 +80,7 @@ List anything that still feels shaky. Re-review before moving on.
 | 2 — Arrays, Strings, Matrices, and Sorting | 04–06 | Complete |
 | 3 — Hashing, Two Pointers, and Prefix Sums | 07–09 | Complete |
 | 4 — Sliding Window and Binary Search | 10–12 | Complete |
-| 5 — Linked Lists, Stacks, and Queues | 13–15 | In progress |
+| 5 — Linked Lists, Stacks, and Queues | 13–15 | Complete |
 | 6 — Recursion and Backtracking | 16–18 | Not started |
 | 7 — Trees, BSTs, Heaps, and Priority Queues | 19–21 | Not started |
 | 8 — Graphs and Graph Algorithms | 22–24 | Not started |
@@ -109,7 +109,7 @@ completion criterion in [`ROADMAP.md`](ROADMAP.md).
 | 12 | 2026-11-18 | `10-binary-search` | [x] | [x] | [x] | Search in Rotated Sorted Array (sorted-half test, exhaustive rotation differential check); Koko Eating Bananas (monotone `Σ ⌈p/k⌉ ≤ h` predicate, ceiling division and `hi = mid` bounds checked) |
 | 13 | 2026-11-18 | `11-linked-list` | [x] | [x] | [x] | Reverse Linked List (iterative + recursive, in-place node identity asserted); Linked List Cycle (Floyd, identity not value comparison, visited-set differential check) |
 | 14 | 2026-11-19 | `12-stack` | [x] | [x] | [x] | Valid Parentheses (stack + closer map, erase-pairs oracle over all 55,987 strings up to length 6); checkpoint 02: 3/3 closed-notes re-solves (Container With Most Water, Find All Anagrams, Search in Rotated Sorted Array) + `list.pop(0)` is O(n) — measured 4× growth per doubling |
-| 15 | | | [ ] | [ ] | [ ] | |
+| 15 | 2026-11-21 | `13-queue-and-deque` | [x] | [x] | [x] | Implement Queue using Stacks (two-stack amortized O(1), deque differential check, transfers counted); Sliding Window Maximum (monotonic deque, O(n), brute-force differential + full-size monotone shapes); mock interview #1 — 4/4 solved, transcript and weak areas in the mock log |
 | 16 | | | [ ] | [ ] | [ ] | |
 | 17 | | | [ ] | [ ] | [ ] | |
 | 18 | | | [ ] | [ ] | [ ] | |
@@ -137,6 +137,66 @@ Complete at each checkpoint (Days 007, 014, 021, 028) and at the end.
 | 3 | 15–21 | | | | |
 | 4 | 22–28 | | | | |
 | 5 | 29–30 | | | | |
+
+## Mock interview log
+
+The format is `ROADMAP.md` Appendix A: read the statement aloud, state the
+approach and its complexity **before** coding, implement, run your own test
+cases, then defend the complexity. One screen, no notes, 60 minutes total with
+the wrap-up at minute 55.
+
+### Mock interview #1 — 2026-11-21 (linked list + stack/queue)
+
+| # | Problem | Topic | Time | Outcome |
+|---|---|---|---|---|
+| 1 | Reverse Linked List (Day 13 re-solve) | `11-linked-list` | 8 min | solved; wrote the node-identity assertion before the value test |
+| 2 | Linked List Cycle (Day 13 re-solve) | `11-linked-list` | 11 min | solved with Floyd; coded before stating the bound (feedback) |
+| 3 | Implement Queue using Stacks (Day 15) | `13-queue-and-deque` | 16 min | solved; called `pop` O(n) flat until asked for the amortized bound |
+| 4 | Sliding Window Maximum (Day 15) | `13-queue-and-deque` | 20 min | O(n·k) re-scan first; monotonic deque after a hint about expiry order |
+| — | Complexity defense / wrap-up | | 5 min | 3 of 4 defended without prompting |
+
+**Transcript (condensed, in interview order).**
+
+*Q1 — Reverse Linked List.* "I'll keep `prev = None`, `curr = head`, and save
+`nxt` before rewiring `curr.next = prev`, so the unprocessed tail is never
+lost." Follow-up: "Why not the recursive version for the 5000-node limit?" →
+"It is O(n) stack frames and Python's default limit is 1000, so I'd use the
+iterative one; the recursive form is the same invariant read backwards."
+
+*Q2 — Linked List Cycle.* First answer: "I'd walk the list with a `set` of
+visited nodes." Follow-up: "That is O(n) space — can you do better?" → Floyd,
+slow and fast pointers. Follow-up: "Why must they meet if there is a cycle?"
+(one prompt) → "Inside the cycle the gap shrinks by one per fast step, so it
+reaches zero." Feedback: on this question I started coding before saying the
+O(n)/O(1) bound.
+
+*Q3 — Implement Queue using Stacks.* "Two stacks: push onto `inbox`; on
+`pop`/`peek`, if `outbox` is empty, reverse `inbox` into it and pop from there."
+I first said `pop` is O(n). Follow-up: "Worst case, or something else?" →
+"Amortized O(1) — each element crosses the two stacks at most once, so any
+sequence of n operations is O(n)." I tested `push 1, push 2, pop, push 3` to
+show 3 queues behind 2.
+
+*Q4 — Sliding Window Maximum.* First version recomputed `max(nums[i:i+k])`,
+which is O(n·k). Follow-up: "Which candidates do you actually need?" → keep a
+decreasing deque of indices. In my first deque version I read the front before
+evicting the expired index, so the output was wrong; my own test
+`[1,-1,-1], k = 2` caught it. Fixing the order to "pop smaller from the back,
+append, evict expired front, then read" passed. Defense: each index is
+appended once and removed at most once, so the scan is O(n) with O(k) space.
+
+**Weak areas from this session**
+
+| Weak area | Evidence | Fix / action | Next check |
+|---|---|---|---|
+| Amortized vs worst-case wording | Q3: stated a flat O(n) `pop` | Say the total bound out loud ("n operations cost O(n) because each element transfers once") before the per-call claim | `13-queue-and-deque`, 2026-11-22 |
+| Monotonic-deque step order | Q4: read front before evicting the expired index | Evict expired front, *then* read; keep `[1,-1,-1], k = 2` as the regression case | `13-queue-and-deque`, 2026-11-22 |
+| Approach before code | Q2: coded before stating complexity | 30-second approach + complexity statement before the first line, every timed session | Mock #2, Day 30 |
+| Floyd termination proof | Q2: needed one prompt | State "gap shrinks by one per iteration, so it hits zero" as part of the solution | `11-linked-list`, 2026-11-25 |
+
+The Day 15 solutions in `day-15/` are the cleaned-up versions of Q3 and Q4
+written after the session; Q2/Q3/Q4's corrected steps are the ones recorded
+above, not the first attempts.
 
 ## Rules for this file
 
